@@ -1,11 +1,16 @@
 import pyttsx3
-import datetime
-import speech_recognition as sr
+import datetime        //built-in module
+import speech_recognition as sr   //extracts text as string from voices
 import wikipedia
-import webbrowser
+import webbrowser            //in-built
 import os
 import pywhatkit
 import pyjokes
+
+
+//pyttsx3 is a Python library that provides a simple way to interface with text-to-speech (TTS) engines.//
+//In the line engine = pyttsx3.init('sapi5'), you're initializing the pyttsx3 text-to-speech engine with the SAPI5 (Speech Application Programming Interface 
+   version as the backend.
 
 engine = pyttsx3.init('sapi5')
 voices = engine.getProperty('voices')
@@ -25,14 +30,17 @@ def wishMe():
         speak("good evening")
     speak("I am kiba , Speed one petabyte , memory one zettabyte . Please tell me how may I help you")
 def takeCommand():
+
+    #takes microphone input from user and retruns string output
+
     r = sr.Recognizer()
     with sr.Microphone() as source:
         print("listening...")
-        r.pause_threshold = 1
-        audio = r.listen(source)
+        r.pause_threshold = 1      #wait 1 sec after u complete speaking )
+        audio = r.listen(source)   #audio = r.listen(source) is used to capture audio data from a given audio source (source) using a Recognizer object (r).
     try:
         print("Recognizing...")
-        query = r.recognize_google(audio,language='en-in')
+        query = r.recognize_google(audio,language='en-in')   #transcription of audio into text using Google's Web Speech API 
         print(f"user said: {query}\n")
     except Exception as e:
 
@@ -48,8 +56,8 @@ if __name__=="__main__":
         query = takeCommand().lower()
         if 'who is' in query:
             speak("searching wikipedia...")
-            query = query.replace("wikipedia", "")
-            results = wikipedia.summary(query, sentences=2)
+            query = query.replace("wikipedia", "")     #wikipedia.summary() function, the word "wikipedia" doesn't interfere with the search. Removing it allows                                                             for a cleaner and more focused search query.
+            results = wikipedia.summary(query, sentences=2)     # prints only two lines
             speak("according to wikipedia")
             print(results)
             speak(results)
@@ -70,7 +78,8 @@ if __name__=="__main__":
             music_dir = 'D:\\music'
             songs = os.listdir(music_dir)
             print(songs)
-            os.startfile(os.path.join(music_dir, songs[0]))
+            os.startfile(os.path.join(music_dir, songs[0]))    # os.startfile =open a file or an application using its default program associated with its file                                                                       xtype in the Windows operating system
+                                                               #os.path.join = join the directory path (music_dir) and the filename (songs[0]) to create the full                                                                     path to the music file.
 
         elif 'play' in query:
 
