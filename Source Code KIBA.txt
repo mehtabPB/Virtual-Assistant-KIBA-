@@ -1,3 +1,8 @@
+/*This project is a Python-based voice assistant named "Kiba". It demonstrates the integration of text-to-speech, speech recognition,
+and automation capabilities to assist users with various tasks. Kiba acts as an interactive virtual assistant capable of responding to user commands, 
+fetching information, and performing actions on the computer*/.
+
+
 import pyttsx3
 import datetime        //built-in module
 import speech_recognition as sr   //extracts text as string from voices
