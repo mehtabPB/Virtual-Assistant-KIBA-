@@ -33,7 +33,7 @@ def wishMe():
         speak("good afternoon!")
     else:
         speak("good evening")
-    speak("I am kiba , Speed one petabyte , memory one zettabyte . Please tell me how may I help you")
+    speak("I am kiba ,Your Personal Assistant. Please tell me how may I help you")
 def takeCommand():
 
     #takes microphone input from user and retruns string output
