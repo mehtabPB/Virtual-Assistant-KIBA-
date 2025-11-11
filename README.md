@@ -3,6 +3,16 @@
 ### **"Turning your voice into action — meet Kiba, your personal AI companion!"**
 
 ---
+<h1 align="center">🤖 Virtual Assistant: KIBA 🎙️</h1>
+
+<p align="center">
+  <img src="https://media.giphy.com/media/3o7abB06u9bNzA8lu8/giphy.gif" width="400" alt="Voice Assistant Animation">
+</p>
+
+<p align="center">
+  <b>Your personal desktop assistant — built entirely with Python 💻</b><br>
+  Kiba listens, speaks, tells jokes, opens apps, plays music, and fetches info just for you!
+</p>
 
 ## 🚀 **Project Overview**
 
