@@ -44,7 +44,7 @@ It can **search Wikipedia**, **open websites**, **play YouTube songs**, **crack 
 ✅ **Launches local apps** like Chrome, Brave, or PowerPoint  
 ✅ **Cracks jokes** for a bit of fun 😄  
 ✅ **Tells the current time**  
-✅ **Responds smartly** to certain phrases like “Are you single?” 😉  
+✅ **Responds smartly** to certain phrases like “Are you single?” 😉  .
 
 ---
 
